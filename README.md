@@ -11,7 +11,6 @@ Get the latest version from **[Releases](https://github.com/Clemz39/forge/releas
 | Platform | File | Notes |
 |---|---|---|
 | Windows 10/11 (64-bit) | `Forge-Setup-<version>.exe` | Installer. Recommended. |
-| Windows 10/11 (64-bit) | `Forge-Portable-<version>.exe` | Runs without installing. Slower to start. |
 | Android 7.0+ (64-bit) | `Forge-<version>-test.apk` | Install over any earlier test build; your notes are kept. |
 
 ### Installing on Windows
