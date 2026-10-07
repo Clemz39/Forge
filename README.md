@@ -11,7 +11,11 @@ Get the latest version from **[Releases](https://github.com/Clemz39/forge/releas
 | Platform | File | Notes |
 |---|---|---|
 | Windows 10/11 (64-bit) | `Forge-Setup-<version>.exe` | Installer. Recommended. |
-| Android 7.0+ (64-bit) | `Forge-<version>-test.apk` | Install over any earlier test build; your notes are kept. |
+| Android 7.0+ (64-bit) | `Forge-<version>.apk` | Installs over any earlier build and keeps your notes. |
+| Mac with Apple silicon (M1 or later) | `Forge-<version>-mac-arm64.zip` | macOS 12 or later. |
+| Intel Mac | `Forge-<version>-mac-x64.zip` | macOS 12 or later. |
+
+From 0.5.0 on, Forge checks this page for updates, verifies each download's signature and offers to install it.
 
 ### Installing on Windows
 
@@ -20,6 +24,12 @@ The installer isn't code-signed yet, so Windows shows a warning the first time:
 1. Run `Forge-Setup-<version>.exe`.
 2. If you see **Windows protected your PC**, click **More info → Run anyway**.
 3. When Windows Firewall asks about Forge, allow it on **private networks** so your phone can sync with it.
+
+### Installing on a Mac
+
+1. Unzip the file and drag **Forge** into **Applications**.
+2. Open it. macOS blocks it the first time because it isn't notarized yet.
+3. Go to **System Settings → Privacy & Security**, scroll down and click **Open Anyway**.
 
 ### Installing on Android
 
@@ -33,7 +43,11 @@ Forge syncs directly between your devices over Wi-Fi — no account and no serve
 1. On the computer: **Settings → Synchronization → Pair a phone**.
 2. On the phone: **Settings → Synchronization → Pair → Scan QR code**.
 
-Both devices need Forge open and to be on the same Wi-Fi network. Guest networks often block devices from seeing each other; if pairing can't find your computer, choose **Enter code** and type the address shown on the computer.
+Both devices need Forge running (on the computer it can stay in the system tray) and to be on the same Wi-Fi network. Guest networks often block devices from seeing each other; if pairing can't find your computer, choose **Enter code** and type the address shown on the computer.
+
+### Syncing away from home
+
+To sync when your phone isn't on the same Wi-Fi as your computer, run **Forge Relay** on a server you control and connect to it from **Settings → Synchronization → Away from home** on the computer. Everything stays encrypted end to end, so the relay can't read your notes. Setup instructions are in [`relay/`](relay/).
 
 ## AI
 
